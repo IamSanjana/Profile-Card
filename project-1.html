@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale:1.0">
+        <title>
+          profile card design
+        </title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> 
+
+        <style type="text/css">
+
+            body{ background-color: darkcyan;
+                background-image:url(BG2proj1.svg), url(bg-pattern-bottom.svg); 
+                background-repeat: no-repeat, no-repeat;
+                background-position-x: -200px, 700px;
+                background-position-y: -500px, 400px;
+              
+            }
+            
+            .box{font-family: 'Kumbh Sans', sans-serif;
+                border-radius: 15px;
+                width:370px;
+                height:400px;
+                margin:auto;
+                margin-top: 150px;
+                text-align: center;
+                background-color:white;
+            }
+
+            .box img{
+                border-radius: 15px 15px 0 0;
+            }
+
+            .dp img{border-radius: 50%; 
+                    border: solid white 5px;
+                    margin-top: -50px;
+            }
+
+            .stat{display: inline-flex;
+                  width: 370px;
+                  justify-content: space-evenly;
+                  border-top: ridge 1px hsl(0, 0%, 79%);;
+                  margin-top: 50px;
+            }
+                      
+            .heading {font-weight: 700;
+                     padding:25px 30px 10px 30px;
+                     font-size: 18px;
+                     color: hsl(229, 23%, 23%);
+            }
+
+            .age {color: hsl(227, 10%, 46%);}
+     
+            .sub {font-weight: 400;
+                  font-size: 12px;
+                  color: hsl(0, 1%, 44%);
+            }    
+
+            .place {font-size: 14px;}
+
+            @media  screen and (max-width: 500px) {
+                body{ 
+                     background-position-x: -700px, 100px;
+                     background-position-y: -600px, 400px;}
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+      
+       <div class="box">
+       <img class="bg" src="Images\BGproj1.SVG" width="370px" height="130px">  
+        <div class="dp"><img src="Images\image-victor.jpg"></div>
+    
+        <div class="tag">
+            <div class="name">
+               <div class="heading">Victor Crest   <span class="age">26</span></div>
+               <div class="sub place">London</div>
+        </div>
+        
+       
+        <div class="stat">
+            <div>
+                <div class="heading">80K</div>
+                <div class="sub">Followers</div> 
+            </div>
+            <div>
+                <div class="heading">803K</div>
+                <div class="sub">Likes</div> 
+            </div>    
+            <div>
+                <div class="heading">1.4K</div>
+                <div class="sub">Photos</div> 
+            </div>       
+        </div>
+        
+       
+    </div>
+
+    </body>
+</html>
